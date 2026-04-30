@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Route Planner</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="https://www.shutterstock.com/image-vector/route-planner-icon-vector-illustration-260nw-2444086253.jpg">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Smart Route Planner</h1>
+
+        <div class="card">
+            <h3>Add Road</h3>
+
+            <input id="locA" placeholder="Location A">
+            <input id="locB" placeholder="Location B">
+            <input id="distance" type="number" placeholder="Distance (km)">
+
+            <button onclick="addRoad()">Add Road</button>
+        </div>
+
+
+        <div class="card">
+            <h3>Find Route</h3>
+
+            <select id="start"></select>
+            <select id="end"></select>
+
+            <button onclick="findRoute()">Find Route</button>
+        </div>
+
+
+        <div class="card">
+            <h3>Map Overview</h3>
+            <ul id="roadList"></ul>
+        </div>
+
+
+        <div class="card resultBox">
+            <h3>Best Route</h3>
+            <p id="result">No route calculated yet.</p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
